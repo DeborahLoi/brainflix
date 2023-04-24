@@ -41,7 +41,7 @@ router.post("/", (req, res) => {
 
   videos.push(newVideo);
 
-  res.status(200).send( {message: 'Success'})
+  res.status(200).send({ message: 'Success' })
   fs.writeFileSync("./data/videos.json", JSON.stringify(videos));
 
 
