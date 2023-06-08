@@ -1,0 +1,17 @@
+@use 'variables' as *;
+@use 'typography' as *;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Avenir-pro';
+    color: $primarycolor-black;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,25 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+
+
+    @include tablet {
+        flex-direction: row;
+        margin: unset;
+        margin-left: 1.5rem;
+    }
+
+    @include desktop {
+        height: 10.28vh;
+        margin: 0 7rem;
+        align-items: center;
+
+    }
+
+}

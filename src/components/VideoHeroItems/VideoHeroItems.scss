@@ -1,0 +1,63 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.hero__title{
+        margin: 1rem;
+
+        @include tablet {
+            margin: 1.5rem;
+        }
+
+        @include desktop{
+            margin: unset;
+            padding-top:1.5rem;
+            padding-bottom:1rem;
+        }
+}
+.video-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid $secondarycolor-mercury;
+    border-bottom: 1px solid $secondarycolor-mercury;
+
+    @include tablet {
+        margin: 1.5rem;
+        padding-top: unset;
+        border-top: unset;
+    }
+
+    @include desktop{
+        margin: unset;
+    }
+
+    &--padding {
+        padding-bottom: 1rem;
+
+            @include desktop{
+                padding-bottom: 0.75rem;
+                margin-right: 1.5rem;
+            }
+    }
+
+    &--color {
+        color: $primarycolor-silver
+    }
+
+    &--display {
+        @include tablet {
+            display: flex;
+            gap: 1.5625rem;
+        }
+    }
+}
+
+.likes-views {
+    margin-right: 3.125rem;
+
+    @include tablet {
+        margin-right: unset;
+    }
+
+}

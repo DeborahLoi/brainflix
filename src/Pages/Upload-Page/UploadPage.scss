@@ -1,0 +1,114 @@
+@use '../../styles/partials/global' as * ;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+
+.buttons__container{
+    @include tablet{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
+}
+    @include desktop{
+        margin-right: 6rem;
+        
+        
+    }
+}
+
+.upload-page{
+
+    
+
+    @include desktop{
+        display:flex;
+        margin: 1rem 7rem 1.5rem 7rem;
+        padding-top: 2rem;
+        border-bottom: 1px solid $secondarycolor-mercury;
+        
+    }
+
+
+}
+
+
+.form__container {
+    margin: 0 1rem;
+
+    @include tablet{
+        border-bottom: 1px solid $secondarycolor-mercury;  
+
+    }
+
+    @include desktop{
+        margin: unset;
+        border-bottom: unset;
+       
+    }
+
+}
+
+
+.input {
+    @include input-data;
+    
+
+    &__field {
+        @include input-field;
+
+
+        @include tablet {
+            font-size: .8125rem;
+            min-height: 2.5rem;
+
+        }
+
+        @include desktop {
+            font-size: .9375rem;
+
+        }
+
+        &--text-color::placeholder {
+            font-family: 'Avenir-pro';
+            color: $primarycolor-black;
+
+
+        }
+
+        &--sizing{
+            min-height: 14.40vh;
+            padding-top: .4375rem;
+
+        }
+
+    }
+}
+
+.button {
+
+    &__container {
+        margin: 0 1rem 1rem 1rem;
+
+    }
+
+
+    &__field {
+        @include button-field;
+        background-color: $primarycolor-white;
+        color: $primarycolor-blue; 
+
+
+        &-icon {
+            left: 1.75rem;
+            position: absolute;
+
+            @include tablet {
+                position: unset;
+                padding-right: 1.75rem;
+                padding-left: 0.625rem;
+            }
+        }
+    }
+
+}

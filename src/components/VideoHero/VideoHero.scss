@@ -1,0 +1,26 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.hero {
+    background-color: $secondarycolor-dark-black;
+
+    &__video {
+        width: 100%;
+        aspect-ratio: 16/9;
+
+
+        @include tablet {
+            aspect-ration: 16/9;
+
+        }
+
+        @include desktop {
+            aspect-ration: 16/9;
+
+
+        }
+
+    }
+
+
+}

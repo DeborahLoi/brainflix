@@ -1,0 +1,45 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.upload-video{
+   margin: 0 1rem 1.5rem 1rem;
+
+   @include tablet{
+      border-top: 1px solid $secondarycolor-mercury;
+   }
+
+   @include desktop{
+      border-top: unset;
+      margin: unset;
+      width: 40%;
+   }
+   
+
+
+   &__subtitle{
+      margin-bottom: .3125rem;
+      margin-top: 2rem;
+
+         @include desktop{
+            margin-top: unset;
+            margin-bottom: .6rem;
+         }
+   }
+    
+   &__image{
+   width:100%;
+   border-radius: 5px;
+
+   @include tablet{
+      width: 50%;
+   }
+
+   @include desktop{
+      width: 95%;
+      height: 23.6vh;
+   }
+   
+}
+
+}
+

@@ -1,0 +1,17 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+
+.upload-video__title{
+    padding: 2rem 1rem;
+    border-top: 1px solid $secondarycolor-mercury; 
+    
+
+    @include desktop{
+        padding-left: 7rem;
+        font-size: 2.375rem;
+       
+      
+    }
+    
+   }

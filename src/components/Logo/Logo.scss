@@ -1,0 +1,17 @@
+@use '../../styles/partials/mixins' as *;
+
+.nav-bar__logo{
+    width: 7.5rem;
+    height: 3.76vh;
+
+    @include tablet{
+    width: 9rem;
+    height: 6.02vh;
+    margin-right: 2.3125rem;
+        
+    }
+    @include desktop{
+        
+    height: 5vh;
+    }
+}

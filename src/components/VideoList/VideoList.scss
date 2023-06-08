@@ -1,0 +1,66 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.videos-list {
+    margin: 1rem;
+
+    @include tablet {
+        width: 39%;
+        margin: 1.5rem;
+    }
+
+    @include desktop {
+        margin: unset;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+        &__title{
+            margin-bottom: 1rem;
+        }
+}
+
+.videos__container {
+    display: flex;
+    height: 7vh;
+    margin-bottom: 1rem;
+
+    @include tablet {
+        margin-right: 1.5rem;
+        height: 11vh;
+    }
+
+    @include desktop{
+        margin-right: unset;
+        height: 8vh;
+    }
+
+    &__title{
+        margin-bottom: 1rem;
+    }
+
+    &--sizing {
+        width: 5.9375rem;
+        height: 100%;
+        border-radius: 4px;
+        margin-right: 1rem;
+        object-fit:cover;
+
+            @include desktop{
+                width: 7rem ;
+                
+            }
+        
+    }
+}
+
+.videos__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.videos__channel {
+    font-size: .8125rem;
+}

@@ -1,0 +1,61 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
+@font-face {
+    font-family:'Avenir-pro' ;
+    src: url(../../assets/Font/AvenirNextLTPro-Bold.otf)  format(opentype);
+    src: url(../../assets/Font/Alternative-files/AvenirNextLTProBold.ttf) format(truetype);
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family:'Avenir-pro' ;
+    src: url(../../assets/Font/AvenirNextLTPro-Demi.otf)  format(opentype);
+    src: url(../../assets/Font/Alternative-files/AvenirNextLTProDemi.ttf) format(truetype);
+    font-weight: 600;
+}
+
+
+@font-face {
+    font-family:'Avenir-pro' ;
+    src: url(../../assets/Font/AvenirNextLTPro-Regular.otf)  format(opentype);
+    src: url(../../assets/Font/Alternative-files/AvenirNextLTPro.ttf) format(truetype);
+    font-weight: 400;
+}
+
+
+//Heading styling
+h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    @include tablet{
+        font-size: 2.25rem;
+        font-weight: 700;
+
+    }
+     @include desktop{
+        font-size: 1.9rem;
+            
+    }
+    
+}
+
+h2{
+    font-size: .8125rem;
+    font-weight: 600;
+    color: $primarycolor-silver;
+    
+}
+
+h3{
+    font-size: .8125rem;
+    font-weight: 600;
+    line-height: 1.125rem;
+}
+
+h4{
+    font-size: .875rem;
+    font-weight: 600;
+}

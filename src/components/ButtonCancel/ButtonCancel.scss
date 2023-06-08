@@ -1,0 +1,43 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+
+.button {
+
+    &__container {
+        margin: 0 1rem 1rem 1rem;
+
+    }
+
+
+    &__field-cancel {
+        @include button-field;
+        background-color: $primarycolor-white;
+        color: $primarycolor-blue; 
+
+
+
+        @include tablet {
+            justify-content: center;
+
+
+        }
+
+        @include desktop {
+            margin-right: 4.375rem;
+        }
+
+
+
+        &-icon {
+            left: 1.75rem;
+            position: absolute;
+
+            @include tablet {
+                position: unset;
+                padding-right: 0.875rem;
+                padding-left: 0.625rem;
+            }
+        }
+    }
+}

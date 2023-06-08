@@ -1,0 +1,103 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+
+.search__container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  &--display {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+
+    @include tablet {
+      width: 85%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    @include desktop {
+      width: unset;
+    }
+  }
+}
+
+.search-input {
+  position: relative;
+  width: 95%;
+  border-radius: 4px;
+  border: 1px solid $secondarycolor-mercury;
+  background-color: #FAFAFA;
+  padding-left: 3rem;
+  height: 2.6rem;
+  margin-top: 1rem;
+  color: $primarycolor-black;
+
+
+
+  &::placeholder {
+    color: $primarycolor-black;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $primarycolor-blue;
+  }
+
+  @include tablet {
+    width: 13.875rem;
+    margin-left: 6rem;
+  }
+
+  @include desktop {
+    margin-left: 18.125rem;
+    width: 17.875rem;
+
+  }
+}
+
+.search-icon {
+  position: absolute;
+  width: 1.4375rem;
+  margin-left: 0.8125rem;
+  padding-bottom: 0.5625rem;
+
+  @include tablet {
+    position: absolute;
+    width: 1.4375rem;
+    padding-bottom: .5625rem;
+    margin-right: 5.5rem;
+    margin-top: 1.625rem;
+  }
+
+  @include desktop {
+    margin-right: -3.5rem;
+
+  }
+}
+
+.search-avatar {
+  width: 2.5625rem;
+  height: 2.25rem;
+  background-image: url(/assets/Images/Mohan-muruge.jpg);
+  background-size: cover;
+  background-position-x: -0.25rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+
+  @include tablet {
+    position: absolute;
+    right: 1rem;
+    width: 2.9625rem;
+    height: 2.65rem;
+  }
+
+  @include desktop {
+    right: 7rem;
+  }
+}

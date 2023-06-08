@@ -1,0 +1,22 @@
+@use '../../styles/partials/global' as * ;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.hero-items{
+
+    @include desktop{
+    display: flex;
+    margin: 0 7rem;
+    min-height: 130.12vh;
+    }
+
+
+    &__container{
+    border-right: 1px solid $secondarycolor-mercury;
+
+        @include desktop{
+            margin-right: 1.5rem;
+            width: 95%
+        }
+}
+}

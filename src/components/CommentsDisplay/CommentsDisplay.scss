@@ -1,0 +1,124 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+
+.comment__title {
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+
+  @include tablet {
+    margin-left: 1.5rem;
+  }
+
+  @include desktop{
+    margin-left: unset;
+  }
+}
+
+.panel {
+  margin: 1rem;
+  border-bottom: 0.0625rem solid $secondarycolor-mercury;
+
+  @include tablet {
+    margin: 1.5rem;
+  }
+
+  @include desktop {
+    margin: unset;
+    border-bottom: unset;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__infos {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    border-top: 0.0625rem solid $secondarycolor-mercury;
+
+    @include desktop {
+      padding-right: 1.5rem;
+    }
+
+    &-details {
+      margin-left: 0.875rem;
+      width: 85%;
+
+      @include tablet {
+        width: 100%;
+
+      }
+    }
+
+    &-avatar {
+      background-color: $secondarycolor-mercury;
+      width: 2.5625rem;
+      height: 2.25rem;
+      background-size: cover;
+      border-radius: 50%;
+
+      @include tablet {}
+    }
+
+    &-name {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: $primarycolor-black;
+      padding-top: 0.1875rem;
+
+
+      @include tablet {
+        font-size: 1rem;
+      }
+
+
+    }
+
+    &-date {
+      color: $primarycolor-silver;
+      font-size: .875rem;
+      padding-top: .1875rem;
+
+      @include tablet {}
+    }
+  }
+
+  &__comment-text {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @include tablet {
+      padding-top: 0.7rem;
+    }
+
+
+    @include desktop {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-size: 0.875rem;
+
+      @include desktop {
+        padding-left: 1.5rem;
+      }
+    }
+
+  }
+
+}
+
+.name-date--display {
+  display: flex;
+  justify-content: space-between;
+
+  @include desktop {
+    padding-left: 1.5rem;
+  }
+
+
+}
